@@ -8,10 +8,64 @@
 	<meta name="format-detection" content="telephone=no" />
 	<link rel="shortcut icon" href="https://github.com/yitzhakapps/yitzhakapps.github.io/blob/main/ICON/storshkoof.png?raw=true"/>
 
-</head>
-<body style="text-align:center; margin:0 auto;">
+	<body style="text-align:center; margin:0 auto;">
 
-<img width=369px height=143px src='https://github.com/yitzhakapps/yitzhakapps.github.io/blob/main/ICON/%D7%A8%D7%A7%D7%A2%20%D7%9C%D7%90%D7%AA%D7%A8%20%D7%90%D7%99%D7%A9%D7%99.png?raw=true'/>
+<head>
+	<img width=369px height=143px src='https://github.com/yitzhakapps/yitzhakapps.github.io/blob/main/ICON/%D7%A8%D7%A7%D7%A2%20%D7%9C%D7%90%D7%AA%D7%A8%20%D7%90%D7%99%D7%A9%D7%99.png?raw=true'/>
+
+<script language="JavaScript">
+
+var TRange=null;
+function findString (str) {
+ if (parseInt(navigator.appVersion)<4) return;
+ var strFound;
+ if (window.find) {
+
+  // CODE FOR BROWSERS THAT SUPPORT window.find
+  strFound=self.find(str);
+  if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+   strFound=self.find(str)
+  }
+  if (!strFound) {
+   strFound=self.find(str,0,1)
+   while (self.find(str,0,1)) continue
+  }
+ }
+ else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+  // EXPLORER-SPECIFIC CODE
+
+  if (TRange!=null) {
+   TRange.collapse(false)
+   strFound=TRange.findText(str)
+   if (strFound) TRange.select()
+  }
+  if (TRange==null || strFound==0) {
+   TRange=self.document.body.createTextRange()
+   strFound=TRange.findText(str)
+   if (strFound) TRange.select()
+  }
+ }
+ else if (navigator.appName=="Opera") {
+  alert ("Opera browsers not supported, sorry...")
+  return;
+ }
+ if (!strFound) alert ("String '"+str+"' not found!")
+ return;
+}
+
+</script>
+</head>
+
+<body>
+	<form name="f1" action=""
+		onSubmit="if(this.t1.value!=null && this.t1.value!='') findString(this.t1.value);return false">
+		<input type="text" name=t1 value="" size=30>
+		<input type="submit" name=b1 value="לחפש">
+		<p> </p>
+	</form>
+	</body>
+
 
 <div><h2>חנות אפליקציות כשרה</h2></div>
 
