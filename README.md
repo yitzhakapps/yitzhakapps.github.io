@@ -1,4 +1,4 @@
 
 # YeApps
-# כאן תוחלו להוריד אפליקציות כשרות גם בנטפרי!
-# <a href="https://yitzhakapps.github.io/" class="myButton">green</a>
+# כאן תוכלו להוריד אפליקציות כשרות גם בנטפרי!
+# <a href="https://yitzhakapps.github.io/">כניסה לאתר</a>
