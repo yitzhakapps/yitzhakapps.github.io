@@ -3,7 +3,7 @@
 <p>כאן תוחלו להוריד אפליקציות כשרות גם בנטפרי!</p>
 <a  href="https://yitzhakapps.github.io/">כניסה לאתר</a>
 <a href="#" class="myButton">green</a>
-
+<style>
 .myButton {
 	background-color:#ffec64;
 	-webkit-border-radius:28px;
@@ -26,4 +26,5 @@
 	position:relative;
 	top:1px;
 }
+</style>
 </center>
