@@ -1,8 +1,7 @@
 # YeApps
 <center>
 <p>כאן תוחלו להוריד אפליקציות כשרות גם בנטפרי!</p>
-<a  href="https://yitzhakapps.github.io/">כניסה לאתר</a>
-<a href="#" class="myButton">green</a>
+<a href="https://yitzhakapps.github.io/" class="myButton">green</a>
 <style>
 .myButton {
 	background-color:#ffec64;
